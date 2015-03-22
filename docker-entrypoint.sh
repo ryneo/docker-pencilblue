@@ -23,7 +23,7 @@ module.exports = {
   "log_level": "$PB_LOG_LEVEL",
   "db": {
       "type":"$PB_DB_TYPE",
-      "servers": $PB_DB_SERVERS,
+      "servers": ["db:27017"],
       "name": "$PB_DB_NAME",
       "writeConcern": 1
   },
@@ -53,6 +53,7 @@ module.exports = {
       "storage": "$PB_SESSION_STORAGE"
   }
 };
+
 EOF
 fi
 
