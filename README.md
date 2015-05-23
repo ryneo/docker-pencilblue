@@ -6,6 +6,12 @@
 
 ## How to use
 
+### `docker`
+
 `docker run -P -d --link my-mongodb:db ryneo/pencilblue:latest nodemon pencilblue`
+
+### `docker-compose`
+
+`docker-compose up`
 
 ## Configuration

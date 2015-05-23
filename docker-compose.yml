@@ -1,0 +1,15 @@
+penciblue:
+  build: .
+  links:
+    - db
+  ports:
+    - "3000:8080"
+
+db:
+  image: mongo:3.0.3
+  links:
+    - data
+  tty: true
+
+data:
+  image: maxexcloo/data
